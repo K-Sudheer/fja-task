@@ -1,0 +1,16 @@
+query GetUsers {
+  users {
+    id
+    name
+    email
+  }
+}
+ 
+query GetUser($id: Int!) {
+  user(id: $id) {
+    id
+    name
+    email
+  }
+}
+ 
