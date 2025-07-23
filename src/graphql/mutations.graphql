@@ -1,0 +1,20 @@
+mutation CreateUser($name: String!, $email: String!) {
+  createUser(name: $name, email: $email) {
+    id
+    name
+    email
+  }
+}
+ 
+mutation UpdateUser($id: Int!, $name: String, $email: String) {
+  updateUser(id: $id, name: $name, email: $email) {
+    id
+    name
+    email
+  }
+}
+ 
+mutation DeleteUser($id: Int!) {
+  deleteUser(id: $id)
+}
+ 
